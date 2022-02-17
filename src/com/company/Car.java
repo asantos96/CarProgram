@@ -5,6 +5,14 @@ public class Car {
     private String makeOfCar;
     private String modelOfCar;
 
+    //Constructor using this statement
+
+    public Car(String colorOfCar, String makeOfCar, String modelOfCar) {
+        this.colorOfCar = colorOfCar;
+        this.makeOfCar = makeOfCar;
+        this.modelOfCar = modelOfCar;
+    }
+
     //setting method for color
     public void setColorOfCar(String color) {
         colorOfCar = color;
@@ -35,5 +43,10 @@ public class Car {
     //getter method for model
     public String getModelOfCar() {
         return modelOfCar;
+    }
+
+    //Method that prints out Car details
+    public void describeCar() {
+        System.out.println(getColorOfCar() + getMakeOfCar() + getModelOfCar());
     }
 }

@@ -13,14 +13,20 @@ public class CarDemo {
         // set each of its instance variables and then gets their values, and finally prints out information about
         // your vehicle// write your code here
 
-            Car myCar = new Car();
+           // Car myCar = new Car();
 
-            myCar.setColorOfCar("Graphite");
-            myCar.setMakeOfCar("Ford");
-            myCar.setModelOfCar("Bronco");
+            //myCar.setColorOfCar("Graphite");
+            //myCar.setMakeOfCar("Ford");
+            //myCar.setModelOfCar("Bronco");
 
-            System.out.println("My vehicle is a " + myCar.getColorOfCar() + " " + myCar.getMakeOfCar() + " " +
-                    myCar.getModelOfCar());
+            //System.out.println("My vehicle is a " + myCar.getColorOfCar() + " " + myCar.getMakeOfCar() + " " +
+            //        myCar.getModelOfCar());
+
+            Car newCar = new Car( "white" , "Ford" , "F-150");
+            newCar.describeCar();
+
+
+
 
     }
 }
